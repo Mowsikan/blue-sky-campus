@@ -2,7 +2,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, File404 } from "lucide-react";
+import { ArrowLeft, FileWarning } from "lucide-react";
 
 const NotFound = () => {
   const location = useLocation();
@@ -20,7 +20,7 @@ const NotFound = () => {
       <div className="max-w-md w-full text-center animate-fade-in">
         <div className="mb-6 flex justify-center">
           <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center">
-            <File404 className="w-12 h-12 text-primary animate-pulse-subtle" />
+            <FileWarning className="w-12 h-12 text-primary animate-pulse-subtle" />
           </div>
         </div>
         
